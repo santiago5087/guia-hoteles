@@ -4,7 +4,6 @@
 }
 
 footer {
-    padding: 10px 10px 0 10px;
     background-color: yellow;
     margin-bottom: 0;
     margin-top: 10px;
@@ -13,13 +12,13 @@ footer {
 .card-hotel {
     display: flex;
     flex-direction: column;
-    flex: 1 150px; /* cuantas unidades crecerá el flex-item para rellenar el espacio | tamaño base principal (ancho) */
-    padding: 5px 8px;
+    flex: 1 200px; /* cuantas unidades crecerá el flex-item para rellenar el espacio | tamaño base principal (ancho) */
     margin-top: 5px;
 }
 
 .btn-reserva {
     width: 100%;
+    border-radius: 0;
 }
 
 .footer-addres-icon {
