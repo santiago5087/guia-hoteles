@@ -44,25 +44,44 @@
     </div>
 
     <div class="container">
-      <nav aria-label="breadcrumb">
+      <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb">
           <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
       </nav>
-      <div class="row">
+
+      <div class="row mb-4">
         <div class="col-sm-4">
-          <h3>¿Cómo funciona?</h4>
-            <p>Busca los hoteles de acuerdo a tu preferencia.</p>
+          <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</a>
         </div>
         <div class="col-sm-4">
-          <h3>¿Dónde puedo reservar?</h4>
-            <p>Elige la ciudad que te interese y luego realiza la reserva con tus datos.</p>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapse2">¿Cómo puedo reservar?</button>
         </div>
         <div class="col-sm-4">
-          <h3>¿Cómo pago?</h4>
-            <p>Utiliza tu tarjeta favorita.</p>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapse3" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
         </div>
       </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="collapse multi-collapse" id="multiCollapse1">
+            <h3>¿Cómo funciona?</h3>
+              <p>Busca los hoteles de acuerdo a tu preferencia.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="collapse multi-collapse" id="multiCollapse2">
+            <h3>¿Dónde puedo reservar?</h3>
+              <p>Elige la ciudad que te interese y luego realiza la reserva con tus datos.</p>
+          </div>
+        </div>    
+        <div class="col-sm-4">
+          <div class="collapse multi-collapse" id="multiCollapse3">
+            <h3>¿Cómo pago?</h3>
+              <p>Utiliza tu tarjeta favorita.</p>
+          </div>
+        </div>
+      </div>
+
       <hr>
       
       <img src="images/banner.jpg" class="img-fluid" alt="Responsive image" style="width: 100%;"> 
