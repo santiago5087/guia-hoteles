@@ -1,0 +1,32 @@
+$yellow: #F9E79F;
+
+@mixin margenes($top, $bottom) {
+   margin-top: $top;
+   margin-bottom: $bottom; 
+}
+
+.jumbotron {
+  background-color: $yellow;
+  color: black;
+}
+
+footer {
+  background-color: $yellow;
+  @include margenes(10px, 0);
+}
+
+.card-hotel {
+  display: flex;
+  flex-direction: column;
+  flex: 1 200px; /* cuantas unidades crecerá el flex-item para rellenar el espacio | tamaño base principal (ancho) */
+  @include margenes(5px, 0);
+}
+
+.btn-reserva {
+  width: 100%;
+  border-radius: 0;
+}
+
+.footer-addres-icon {
+  padding-right: 10px;
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.jumbotron {
+  background-color: #F9E79F;
+  color: black; }
+
+footer {
+  background-color: #F9E79F;
+  margin-top: 10px;
+  margin-bottom: 0; }
+
+.card-hotel {
+  display: flex;
+  flex-direction: column;
+  flex: 1 200px;
+  /* cuantas unidades crecerá el flex-item para rellenar el espacio | tamaño base principal (ancho) */
+  margin-top: 5px;
+  margin-bottom: 0; }
+
+.btn-reserva {
+  width: 100%;
+  border-radius: 0; }
+
+.footer-addres-icon {
+  padding-right: 10px; }

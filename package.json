@@ -4,16 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently 'npm run dev' 'npm run watch:scss'",
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir=dist/images",
+    "usemin": "usemin index.html -d dist -o dist/index.html --htmlmin && usemin about.html -d dist -o dist/about.html --htmlmin && usemin contact.html -d dist -o dist/contact.html --htmlmin && usemin precios.html -d dist -o dist/precios.html --htmlmin",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "imagemin-cli": "^6.0.0",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "concurrently": "^5.2.0",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1"
