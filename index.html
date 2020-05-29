@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- build:css dist/index.css -->
+    <!-- build:css css/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
     <!-- endbuild -->
 
-    <title>Hello, world!</title>
+    <title>Hoteles!</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
@@ -259,43 +259,11 @@
       
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <!-- build:js  dist/index.js -->
+      <!-- build:js  js/main.js -->
       <script src="node_modules/jquery/dist/jquery.min.js" integrity="" crossorigin="anonymous"></script>
       <script src="node_modules/popper.js/dist/umd/popper.min.js" integrity="" crossorigin="anonymous"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
-      
-      <script>
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        });
-        $(function () {
-          $('[data-toggle="popover"]').popover()
-        });
-        $('.carousel').carousel({
-          interval: 2000
-        });
-
-        
-        $('#exampleModal').on('show.bs.modal', function(e) {
-          $('#contacto').prop('disabled', true);
-          $('#contacto').removeClass('btn-primary');
-          $('#contacto').addClass('btn-warning');
-          console.log('Se muestra el modal');
-          $('#contacto').prop('disabled', true);
-        });
-        $('#exampleModal').on('shown.bs.modal', function(e) {
-          console.log('Se mostró el modal');
-        });
-        $('#exampleModal').on('hide.bs.modal', function(e) {
-          $('#contacto').prop('disabled', false);
-          $('#contacto').removeClass('btn-warning');
-          $('#contacto').addClass('btn-primary');
-          console.log('Se cierra el modal');
-        });
-        $('#exampleModal').on('hidden.bs.modal', function(e) {
-          console.log('Se cerró el modal');
-        });
-    </script>
+      <script src="js/index.js"></script>
     <!-- endbuild -->
   </body>
 </html>
