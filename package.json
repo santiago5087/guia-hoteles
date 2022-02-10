@@ -30,7 +30,7 @@
     "gulp-usemin": "^0.3.30",
     "imagemin-cli": "^6.0.0",
     "lite-server": "^2.5.4",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "onchange": "^7.0.2",
     "rimraf": "^3.0.2",
     "usemin-cli": "^0.6.0"
